@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     background-color: rgba(0, 0, 0, 1);
@@ -7,9 +10,12 @@ main{
     color: rgba(97, 97, 97, 1);
 }
 h1{
-    color: rgba(97, 97, 97, 1);
+    color: rgb(148, 190, 86);
     text-align: center;
     font-size: 2.5rem;
+}
+h4{
+    color: rgb(148, 190, 86);
 }
 .nav ul{
     background-color: rgba(97, 97, 97, 1);;
@@ -29,4 +35,45 @@ h1{
 }
 .nav li{
     float: left;
+}
+article{
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+section{
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+aside{
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+.footer ul{
+    background-color: rgba(97, 97, 97, 1);;
+    list-style: none;
+    padding: 0px;
+    overflow: hidden;
+    display: block;
+    clear: both;
+}
+.footer a{
+    color:rgba(0, 0, 0, 1);
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+.footer a:hover{
+    background-color: rgb(129, 129, 129);
+}
+.footer li{
+    float: left;
+}
+@media screen and (max-width: 600px){
+    article, section, aside{
+        width: 100%;
+    }
 }
